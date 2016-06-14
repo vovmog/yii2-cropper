@@ -1,6 +1,6 @@
 <?php
 
-namespace budyaga\cropper\assets;
+namespace vovmog\cropper\assets;
 
 use yii\web\AssetBundle;
 
@@ -33,7 +33,7 @@ class CropperAsset extends AssetBundle
      */
     public $depends = [
         'yii\web\JqueryAsset',
-        'budyaga\cropper\assets\JcropAsset',
-        'budyaga\cropper\assets\SimpleAjaxUploaderAsset',
+        'vovmog\cropper\assets\JcropAsset',
+        'vovmog\cropper\assets\SimpleAjaxUploaderAsset',
     ];
 }

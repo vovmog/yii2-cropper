@@ -1,8 +1,8 @@
 <?php
 
-namespace budyaga\cropper;
+namespace vovmog\cropper;
 
-use budyaga\cropper\assets\CropperAsset;
+use vovmog\cropper\assets\CropperAsset;
 use yii\base\InvalidConfigException;
 use yii\helpers\Json;
 use yii\widgets\InputWidget;
@@ -32,7 +32,7 @@ class Widget extends InputWidget
         if ($this->uploadUrl === null) {
             throw new InvalidConfigException(Yii::t('cropper', 'MISSING_ATTRIBUTE', ['attribute' => 'uploadUrl']));
         } else {
-            $this->uploadUrl = rtrim(Yii::getAlias($this->uploadUrl), '/') . '/';
+            $this->uploadUrl = rtrim(Yii::getAlias($this->uploadUrl), '/');
         }
 
         if ($this->label == '') {

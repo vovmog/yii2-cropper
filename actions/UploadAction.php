@@ -1,6 +1,6 @@
 <?php
 
-namespace budyaga\cropper\actions;
+namespace vovmog\cropper\actions;
 
 use yii\base\Action;
 use yii\base\DynamicModel;
@@ -8,7 +8,7 @@ use yii\base\InvalidConfigException;
 use yii\web\BadRequestHttpException;
 use yii\web\Response;
 use yii\web\UploadedFile;
-use budyaga\cropper\Widget;
+use vovmog\cropper\Widget;
 use yii\imagine\Image;
 use Imagine\Image\Box;
 use Yii;
@@ -79,8 +79,7 @@ class UploadAction extends Action
                     ];
                 } else {
                     $result = [
-                        'error' => Yii::t('cropper', 'ERROR_CAN_NOT_UPLOAD_FILE')]
-                    ;
+                        'error' => Yii::t('cropper', 'ERROR_CAN_NOT_UPLOAD_FILE')];
                 }
             }
             Yii::$app->response->format = Response::FORMAT_JSON;
